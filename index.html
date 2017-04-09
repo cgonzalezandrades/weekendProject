@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="HomeController as ctrl">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="public/css/reset.css" rel="stylesheet">
+    <link href="public/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="public/css/anim-in-out.css" rel="stylesheet">
+    <link href="/public/css/style.css" rel="stylesheet">
+
+
+
+    <!--<base href="/">-->
+</head>
+
+
+
+<body id="page-top" class="index">
+<div class="wrapper">
+<!-- Navigation -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ui-sref="home">Home</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a ui-sref="services">Services</a></li>
+                <li><a ui-sref="about">About</a></li>
+                <li><a ui-sref="contact">Contact</a></li>
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--<ui-view></ui-view>-->
+<!--<div ui-view="mainView" class="anim-in-out"></div>-->
+
+    <div class="push"></div>
+
+
+    <div id="menu">
+        <a href="#/"><button class="btn btn-primary">Page 1</button></a>
+        <!--<a href="#/page2"><button class="btn btn-primary">Page 2</button></a>-->
+    </div>
+
+
+    <div id="main" ui-view="main" autoscroll="false" class="anim-in-out {{ctrl.mainViewStyle}}"
+         data-anim-sync="{{ctrl.sync}}"
+         data-anim-speed="{{ctrl.speed}}"
+         ng-style="{
+				'-webkit-transition-duration': ctrl.speed + 'ms',
+				'-moz-transition-duration': ctrl.speed + 'ms',
+				'-ms-transition-duration': ctrl.speed + 'ms',
+				'-o-transition-duration': ctrl.speed + 'ms',
+				'transition-duration': ctrl.speed + 'ms'
+			}"></div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div id="contact-area">
+    <div ng-include="'contactForm.html'"></div>
+</div>
+
+<div id="footer-bar">
+
+        <div ng-include="'footer.html'"></div>
+</div>
+
+
+</body>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+<script src="public/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="public/lib/angular/angular.min.js" type="text/javascript"></script>
+<script src="public/lib/angular/angular-ui-router.js" type="text/javascript"></script>
+<script src="public/lib/angular/angular-animate.js" type="text/javascript"></script>
+<script src="public/lib/angular/anim-in-out.js" type="text/javascript"></script>
+<script src="controllers/main.js" type="text/javascript"></script>
+<script src="controllers/AboutController.js" type="text/javascript"></script>
+<script src="controllers/HomeController.js" type="text/javascript"></script>
+</html>

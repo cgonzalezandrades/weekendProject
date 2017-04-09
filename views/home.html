@@ -1,0 +1,16 @@
+<div class="container-fluid" ng-controller="HomeController as ctrl">
+    <h1>Home</h1>
+</div>
+
+<div class="wrapper {{ctrl.page1Style}}"
+     ng-style="{
+		'-webkit-transition-duration': ctrl.speed + 'ms',
+		'-moz-transition-duration': ctrl.speed + 'ms',
+		'-ms-transition-duration': ctrl.speed + 'ms',
+		'-o-transition-duration': ctrl.speed + 'ms',
+		'transition-duration': ctrl.speed + 'ms'
+	}">
+
+    <h1>Page 1</h1>
+
+</div>
