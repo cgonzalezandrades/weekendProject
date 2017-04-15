@@ -1,20 +1,12 @@
 {
-  "name": "morand",
+  "name": "test",
   "version": "1.0.0",
-  "description": "",
+  "description": "test",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "angular-ui-router-anim-in-out": "^1.0.2",
-    "express": "^4.14.0",
-    "path": "^0.12.7"
-  },
-  "devDependencies": {
-    "angular-ui-router-anim-in-out": "^1.0.2"
-  }
+  "license": "ISC"
 }

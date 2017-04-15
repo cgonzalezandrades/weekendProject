@@ -1,22 +1,31 @@
-var express = require("express");
+/**
+ * Created by carlosgonzalez on 4/14/17.
+ */
+/**
+ * Created by carlosgonzalez on 4/14/17.
+ */
+var express = require('express');
 var app = express();
-var PORT = process.env.PORT || 3001;
 var path = require('path');
-var router = express.Router();
+var PORT = process.env.PORT || 3000;
 
- app.use(express.static(__dirname));
+// app.use(express.static(path.join(__dirname, 'public')))
 
-app.all('/', function(req, res) {
-    res.sendFile(__dirname+'/index.html');
-});
+app.use(express.static(__dirname + '/public'));
 
-// app.get('/about', function (req, res) {
-//
-//     res.sendFile(__dirname + '/views/about.html');
-// })
+app.get('/', function (req,res) {
+    res.sendFile('index.html');
+})
 
+
+app.get('/about', function (req,res) {
+    res.sendFile(__dirname+'/public/index.html');
+})
+
+app.get('/home', function (req,res) {
+    res.sendFile(__dirname+'/public/index.html');
+})
 
 app.listen(PORT, function () {
     console.log("Server running in PORT " + PORT);
 });
-
