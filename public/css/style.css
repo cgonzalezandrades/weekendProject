@@ -54,10 +54,10 @@ nav.navbar{
 -webkit-transition: all 10s ease;
     transition: all 10s ease;
 }
-#carousel-title{
-    font-size: 5em;
-    margin-bottom: 200px;
-}
+/*#carousel-title{*/
+    /*font-size: 5em;*/
+    /*margin-bottom: 200px;*/
+/*}*/
 /*img{*/
     /*width: 100%;*/
     /*height: 610px!important;*/
@@ -70,6 +70,7 @@ nav.navbar{
     /*background-image: url('../img/map-image.png');*/
     /*margin-top: 600px;*/
     background-color: rgba(249,239,0,0.43);
+
     background-position: center;
     /*background-repeat: no-repeat;*/
     padding-bottom: 15%;
@@ -82,3 +83,61 @@ nav.navbar{
     height: 50px;
     margin-top: -50px;
 }
+
+#myCarousel{
+ margin-top: 5%;
+}
+
+.carousel-inner > .item > img {
+    width:100%;
+    height:560px;
+}
+
+#my-img-one{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), black), url("../img/orlando-1104481_1280.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:460px;
+}
+
+#my-img-two{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), black), url("../img/orlando-1104481_1280.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:460px;
+}
+
+#my-img-three{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), black), url("../img/orlando-1104481_1280.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:460px;
+}
+
+#my-img-four{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), black), url("../img/orlando-1104481_1280.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:460px;
+}
+
+#myCarousel .nav a small
+{
+    display: block;
+}
+#myCarousel .nav
+{
+    background: #eee;
+}
+.nav-justified > li > a
+{
+    border-radius: 0px;
+}
+.nav-pills>li[data-slide-to="0"].active a { background-color: #16a085; }
+.nav-pills>li[data-slide-to="1"].active a { background-color: #e67e22; }
+.nav-pills>li[data-slide-to="2"].active a { background-color: #2980b9; }
+.nav-pills>li[data-slide-to="3"].active a { background-color: #8e44ad;}
