@@ -1,17 +1,12 @@
-/**
- * Created by carlosgonzalez on 4/14/17.
- */
-/**
- * Created by carlosgonzalez on 4/5/17.
- */
-myApp.controller('AboutController',['$scope','$rootScope', '$rootScope', '$scope',
-    function($rootScope, $scope) {
+myApp.controller('AboutController', ['$scope', '$rootScope', '$rootScope', '$state', '$stateParams',
+    function ($rootScope, $scope,$state, $stateParams) {
 
+        $scope.state = $stateParams.current.name;
+
+        console.log($scope.state);
 
         console.log("Hello from about controller");
 
         $scope.hello = 'about';
 
-    }]);/**
- * Created by carlosgonzalez on 4/14/17.
- */
+    }]);

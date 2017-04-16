@@ -22,9 +22,7 @@ app.get('/about', function (req,res) {
     res.sendFile(__dirname+'/public/index.html');
 })
 
-app.get('/home', function (req,res) {
-    res.sendFile(__dirname+'/public/index.html');
-})
+
 
 app.listen(PORT, function () {
     console.log("Server running in PORT " + PORT);

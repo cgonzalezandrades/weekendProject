@@ -54,36 +54,28 @@ nav.navbar{
 -webkit-transition: all 10s ease;
     transition: all 10s ease;
 }
-
-item img{
-    height: 500px;
-    width: 100%;
+#carousel-title{
+    font-size: 5em;
+    margin-bottom: 200px;
 }
-
-.carousel-inner{
-    height: 500px ;
-}
-
-
-    /*#top-banner-picture{*/
-    /*background-image: url('../img/bus-887362_1920.jpg');*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*padding-bottom: 50%;*/
-    /*!*height: 100%;*!*/
-    /*background-size: auto;*/
-    /*z-index: 0;*/
+/*img{*/
+    /*width: 100%;*/
+    /*height: 610px!important;*/
 /*}*/
 
-#morand-team{
-    background-image: url('../img/map-image.png');
-    background-color: black;
+
+
+
+#morand-footer{
+    /*background-image: url('../img/map-image.png');*/
+    /*margin-top: 600px;*/
+    background-color: rgba(249,239,0,0.43);
     background-position: center;
-    background-repeat: no-repeat;
-    padding-bottom: 20%;
+    /*background-repeat: no-repeat;*/
+    padding-bottom: 15%;
     /*height: 100%;*/
-    background-size: auto;
-    z-index: 0;
+    /*background-size: auto;*/
+    /*z-index: 0;*/
 }
 
 .footer {

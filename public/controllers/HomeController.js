@@ -1,12 +1,9 @@
-/**
- * Created by carlosgonzalez on 4/14/17.
- */
-/**
- * Created by carlosgonzalez on 4/5/17.
- */
-myApp.controller('HomeController',['$scope','$rootScope', '$rootScope', '$scope',
-    function($rootScope, $scope) {
+myApp.controller('HomeController', ['$scope', '$rootScope', '$rootScope', '$state', '$stateParams',
+    function ($rootScope, $scope, $state, $stateParams) {
 
+        $scope.state = $stateParams.current.name;
+
+        console.log($scope.state);
 
         console.log("Hello from Home controller");
 

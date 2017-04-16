@@ -3,9 +3,6 @@
  */
 var myApp = angular.module('myApp',['ui.router']);
 
-
-console.log("in myApp");
-
 $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
         $('nav').addClass('shrink');
@@ -19,13 +16,7 @@ $(window).scroll(function() {
 myApp.config( function ($stateProvider, $locationProvider) {
 
     $stateProvider
-        .state('home',{
-            url:'/home',
-            templateUrl:'/partials/home.html',
-            controller:'HomeController'
 
-
-        })
         .state('about',{
             url:'/about',
             templateUrl:'/partials/about.html',
@@ -33,6 +24,12 @@ myApp.config( function ($stateProvider, $locationProvider) {
 
 
         })
+        .state('home',{
+            url:'/',
+            controller:'HomeController'
+        })
+
+
 
     // $locationProvider.html5Mode(true).hashPrefix('/#!/');
     $locationProvider.html5Mode(true);
