@@ -1,7 +1,7 @@
 /**
  * Created by carlosgonzalez on 4/5/17.
  */
-var myApp = angular.module('myApp',['ui.router']);
+var myApp = angular.module('myApp',['ui.router','matchMedia']);
 
 $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {

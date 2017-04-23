@@ -1,66 +1,117 @@
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Wrapper for slides -->
-        <ul class="nav nav-pills nav-justified">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">Orlando<small>Lorem
-                ipsum dolor sit</small></a></li>
-            <li data-target="#myCarousel" data-slide-to="1"><a href="#">Miami<small>Lorem ipsum
-                dolor sit</small></a></li>
-            <li data-target="#myCarousel" data-slide-to="2"><a href="#">Port Canaveral<small>Lorem ipsum
-                dolor sit</small></a></li>
-            <li data-target="#myCarousel" data-slide-to="3"><a href="#">New York<small>Lorem ipsum
-                dolor sit</small></a></li>
-        </ul>
-        <div class="carousel-inner">
-            <div class="item active">
-                <div id="my-img-one"></div>
-                <div class="carousel-caption">
-                    <h3>
-                        Headline</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem
-                        ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                </div>
-            </div>
-             <!--End Item -->
-            <div class="item">
-                <div id="my-img-two"></div>
-                <div class="carousel-caption">
-                    <h3>
-                        Headline</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem
-                        ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                </div>
-            </div>
-            <!-- End Item -->
-            <div class="item">
-                <div id="my-img-three"></div>
-                <div class="carousel-caption">
-                    <h3>
-                        Headline</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem
-                        ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                </div>
-            </div>
-            <!-- End Item -->
-            <div class="item">
-                <div id="my-img-four"></div>
-                <div class="carousel-caption">
-                    <h3>
-                        Headline</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem
-                        ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                </div>
-            </div>
-             <!--End Item -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Main Destinations</h2>
+            <br>
+            <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
         </div>
-        <!-- End Carousel Inner -->
-
     </div>
-    <!-- End Carousel -->
+</div>
+
+
+<!-- Add this css File in head tag-->
+<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">-->
+<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">-->
+
+
+<!--
+       If you want to change #bootstrap-touch-slider id then you have to change Carousel-indicators and Carousel-Control  #bootstrap-touch-slider slide as well
+       Slide effect: slide, fade
+       Text Align: slide_style_center, slide_style_left, slide_style_right
+       Add Text Animation: https://daneden.github.io/animate.css/
+       -->
+
+
+<div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+        <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+        <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+        <li data-target="#bootstrap-touch-slider" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper For Slides -->
+    <div class="carousel-inner" role="listbox">
+
+        <!-- Third Slide -->
+        <div class="item active">
+
+            <!-- Slide Background -->
+            <img src="../img/parks-2090658_1920.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+            <!--<div id="my-img-one"  alt="Bootstrap Touch Slider"  class="slide-image"></div>-->
+            <div class="bs-slider-overlay"></div>
+
+            <div class="container">
+                <div class="row">
+                    <!-- Slide Text Layer -->
+                    <div class="slide-text slide_style_left">
+                        <h1 data-animation="animated zoomInRight">Orlando</h1>
+                        <p data-animation="animated fadeInLeft">Bootstrap carousel now touch enable slide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Slide -->
+
+        <!-- Second Slide -->
+        <div class="item">
+
+            <!-- Slide Background -->
+            <img src="../img/miami-1198921_1920.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+            <div class="bs-slider-overlay"></div>
+            <!-- Slide Text Layer -->
+            <div class="slide-text slide_style_center">
+                <h1 data-animation="animated flipInX">Miami</h1>
+                <p data-animation="animated lightSpeedIn">Make Bootstrap Better together.</p>
+            </div>
+        </div>
+        <!-- End of Slide -->
+
+        <!-- Third Slide -->
+        <div class="item">
+
+            <!-- Slide Background -->
+            <img src="../img/rocket-67724_1920.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+            <div class="bs-slider-overlay"></div>
+            <!-- Slide Text Layer -->
+            <div class="slide-text slide_style_right">
+                <h1 data-animation="animated zoomInLeft">Port Canaveral</h1>
+                <p data-animation="animated fadeInRight">Lots of css3 Animations to make slide beautiful .</p>
+            </div>
+        </div>
+
+        <div class="item">
+
+            <!-- Slide Background -->
+            <img src="../img/nyc-2057534_1920.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+            <div class="bs-slider-overlay"></div>
+            <!-- Slide Text Layer -->
+            <div class="slide-text slide_style_left">
+                <h1 data-animation="animated zoomInRight">New York</h1>
+                <p data-animation="animated fadeInRight">Lots of css3 Animations to make slide beautiful .</p>
+            </div>
+        </div>
+        <!-- End of Slide -->
+
+
+    </div><!-- End of Wrapper For Slides -->
+
+    <!-- Left Control -->
+    <!--<a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">-->
+        <!--<span class="fa fa-angle-left" aria-hidden="true"></span>-->
+        <!--<span class="sr-only">Previous</span>-->
+    <!--</a>-->
+
+    <!--&lt;!&ndash; Right Control &ndash;&gt;-->
+    <!--<a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">-->
+        <!--<span class="fa fa-angle-right" aria-hidden="true"></span>-->
+        <!--<span class="sr-only">Next</span>-->
+    <!--</a>-->
+
+</div> <!-- End  bootstrap-touch-slider Slider -->
+
+
+
+
