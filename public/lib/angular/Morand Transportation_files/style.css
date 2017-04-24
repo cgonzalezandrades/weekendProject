@@ -1,7 +1,6 @@
 html, body {
     height: 100%;
     margin: 0;
-    max-width: 100%;
 }
 
 #about-page{
@@ -89,40 +88,15 @@ nav.navbar{
 
     background-position: center;
     /*background-repeat: no-repeat;*/
-    /*padding-bottom: 7%;*/
+    padding-bottom: 7%;
     /*height: 100%;*/
     /*background-size: auto;*/
     /*z-index: 0;*/
-    color: white;
 }
-
-#morand-top-footer{
-    margin-bottom: 5%;
-}
-
-#morand-bottom-footer{
-    background-color: #2b669a;
-}
-
-#botton-nav-bar{
-    display: inline;
-    float: right;
-
-}
-
-#botton-nav-bar a {
-    color: white;
-    text-decoration: none;
-}
-
 
 .footer {
-    /*height: 50px;*/
-    /*margin-top: -50px;*/
-}
-
-#company-links{
-    margin-top: 3%;
+    height: 50px;
+    margin-top: -50px;
 }
 
 #myCarousel{
@@ -195,34 +169,6 @@ nav.navbar{
 @media only screen and (min-width: 700px) {
     #header {
         background-attachment: fixed;
-    }
-
-
-
-    /*.fa-4x{*/
-        /*font-size: 2em;*/
-    /*}*/
-}
-
-@media only screen and (max-width: 700px) {
-    .text-muted{
-        font-size: 0.5em;
-    }
-
-   .fa-4x{
-   font-size: 2em !important;
-   }
-
-   .modal{
-       width: 90%;
-   }
-
-    .col-xs-4 {
-        width: 32.333333%;
-    }
-
-    .service-heading{
-     font-size: 1em;
     }
 }
 
@@ -583,9 +529,9 @@ nav.navbar{
 
 
 
-/*==============*/
-/*TIMELINE*/
-/*==============*/
+
+/*sladmklasdlkasldksnalkdnaslkdnklsad*/
+
 
 .timeline {
     list-style: none;
@@ -777,45 +723,4 @@ nav.navbar{
         left: -14px;
         right: auto;
     }
-}
-
-#return-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.7);
-    width: 50px;
-    height: 50px;
-    display: block;
-    text-decoration: none;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    border-radius: 35px;
-    display: none;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-#return-to-top i {
-    color: #fff;
-    margin: 0;
-    position: relative;
-    left: 16px;
-    top: 13px;
-    font-size: 19px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-#return-to-top:hover {
-    background: rgba(0, 0, 0, 0.9);
-}
-#return-to-top:hover i {
-    color: #fff;
-    top: 5px;
 }

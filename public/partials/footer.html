@@ -1,23 +1,43 @@
+<a id="return-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
 <div id="morand-footer">
-    <div class="container"></div>
-    <div class="row">
-        <!--<div class="col-md-12">-->
-            <!--<div class="col-md-4">-->
-            <!--<h3>Morand Transportation</h3>-->
-                <!--<i class="fa fa-facebook fa-5x" aria-hidden="true"></i>-->
-            <!--</div>-->
+    <div class="container">
+        <div class="row" id="morand-top-footer">
+            <div class="col-md-4 col-sm-3 col-xs-4">
+                <h1>Logo</h1>
+                <h5> 524 cresting oak cir</h5>
+                <h5>Orlando Fl, 34743</h5>
+                +1 407 675 6274
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4" id="company-links">
 
 
-            <!--<div class="col-md-4">-->
-<!--s-->
-            <!--</div>-->
+                <p><a>careers</a></p>
+                <p><a>privacy policy</a></p>
+                <p><a>Terms and conditions</a></p>
+
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <h2>Connect with Us</h2>
+
+            </div>
 
 
-            <!--<div class="col-md-4">-->
-<!--s-->
-            <!--</div>-->
+        </div>
+    </div>
 
+    <div id="morand-bottom-footer">
+        <div class="container">
+        <div ng-model="currentYear">
+            Morand Transportation {{currentYear}}
+            <span id="botton-nav-bar" >
+                <a ui-sref="home" id="return-to-to" >Home</a>
+                <a ui-sref="about">About</a>
+                <a  href="#" ng-click="contactModal()">Contact Us</a>
 
+            </span>
+        </div>
         </div>
     </div>
 
