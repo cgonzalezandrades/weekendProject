@@ -7,7 +7,7 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-var PORT = process.env.PORT || 3000;
+// var PORT = process.env.PORT || 3000;
 
 // app.use(express.static(path.join(__dirname, 'public')))
 
@@ -24,6 +24,11 @@ app.get('/about', function (req,res) {
 
 
 
+// app.listen(PORT, function () {
+//     console.log("Server running in PORT " + PORT);
+// });
+var PORT = process.env.PORT || 3000;
 app.listen(PORT, function () {
-    console.log("Server running in PORT " + PORT);
-});
+    console.log('IM LISTENING IS PORT ' + PORT);
+
+})
