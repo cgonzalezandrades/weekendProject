@@ -19,14 +19,20 @@ app.post('/', function (req, res, next) {
 
     console.log(req.body);
 
+    if(req.body.message == undefined){
+        req.body.message = 'no message provided';
+    }
+
 
     var helper = require('sendgrid').mail;
-    var fromEmail = new helper.Email(req.body.email);
+    var fromEmail = new helper.Email('morandinfo@morandtransportation.com');
     var toEmail = new helper.Email('morandinfo@morandtransportation.com');
     var subject = 'Requesting info';
-    var content = new helper.Content('text/plain', 'Name: '+ req.body.firstName +' '+ req.body.lastName + '<br>'+
-        'Phone Number: '+ req.body.phoneNumber +
-        req.body.message);
+    var content = new helper.Content('text/html',
+        '<h2>Name:</h2> '+'<h3>'+ req.body.firstName +' '+ req.body.lastName +'</h3>'+
+        '<h2>Phone Number:</h2> '+'<h3>'+ req.body.phoneNumber +'</h3>'+
+        '<h2>Email:</h2> ' + req.body.email +
+        '<h3>'+req.body.message +'</h3>');
 
     var mail = new helper.Mail(fromEmail, subject, toEmail, content);
 
@@ -46,13 +52,9 @@ app.post('/', function (req, res, next) {
         console.log(response.headers);
     });
 
-    // res.end('yes')
 })
 
 
-// var PORT = process.env.PORT || 3000;
-
-// app.use(express.static(path.join(__dirname, 'public')))
 
 
 app.get('/', function (req, res) {
@@ -69,9 +71,6 @@ app.get('*', function (req, res) {
 })
 
 
-// app.listen(PORT, function () {
-//     console.log("Server running in PORT " + PORT);
-// });
 var PORT = process.env.PORT || 3000;
 app.listen(PORT, function () {
     console.log('IM LISTENING IS PORT ' + PORT);
