@@ -1,9 +1,9 @@
 /**
  * Created by carlosgonzalez on 4/5/17.
  */
-var myApp = angular.module('myApp',['ui.router','matchMedia']);
+var myApp = angular.module('myApp', ['ui.router', 'matchMedia']);
 
-$(window).scroll(function() {
+$(window).scroll(function () {
     if ($(document).scrollTop() > 50) {
         $('nav').addClass('shrink');
     } else {
@@ -12,23 +12,21 @@ $(window).scroll(function() {
 });
 
 
-
-myApp.config( function ($stateProvider, $locationProvider) {
+myApp.config(function ($stateProvider, $locationProvider) {
 
     $stateProvider
 
-        .state('about',{
-            url:'/about',
-            templateUrl:'/partials/about.html',
-            controller:'AboutController'
+        .state('about', {
+            url: '/about',
+            templateUrl: '/partials/about.html',
+            controller: 'AboutController'
 
 
         })
-        .state('home',{
-            url:'/',
-            controller:'HomeController'
+        .state('home', {
+            url: '/',
+            controller: 'HomeController'
         })
-
 
 
     // $locationProvider.html5Mode(true).hashPrefix('/#!/');

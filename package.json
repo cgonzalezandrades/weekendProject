@@ -8,5 +8,10 @@
     "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "nodemailer": "^4.0.1",
+    "sendgrid": "^5.1.0"
+  }
 }
