@@ -26,7 +26,7 @@ app.post('/', function (req, res, next) {
 
     var helper = require('sendgrid').mail;
     var fromEmail = new helper.Email('morandinfo@morandtransportation.com');
-    var toEmail = new helper.Email('morandinfo@morandtransportation.com');
+    var toEmail = new helper.Email('gustavo.andrade@morandtransportation.com');
     var subject = 'Requesting info';
     var content = new helper.Content('text/html',
         '<h2>Name:</h2> '+'<h3>'+ req.body.firstName +' '+ req.body.lastName +'</h3>'+
